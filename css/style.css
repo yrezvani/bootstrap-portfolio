@@ -1,0 +1,38 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.nav-link:focus,
+.nav-link:hover {
+    color: white;
+}
+
+.nav-banner img {
+    width: 100%;
+    height: 7rem;
+}
+
+/* Hero */
+.hero-container {
+    display: flex;
+    align-items: center;
+}
+.my-photo {
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+
+.hero {
+    gap: 2rem;
+    
+
+}
+
+.hero p {
+    text-align: justify;
+}
