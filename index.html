@@ -6,41 +6,150 @@
     <title>Bootstrap Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    
 </head>
-<nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
-    <a class="navbar-brand" href="#">Yasser Rezvani</a>
-    <div class="collapse navbar-collapse" id="navbarsExample02">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CV</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-<section class="hero">
-    <div class="p-5 bg-light rounded-3 hero-container">
-        <div class="container-fluid py-2 ">
-            <div class="d-lg-flex flex-wrap">
-                <div class="col-lg-6 col-sm-12">
-                    <h1 class="display-6 fw-bold ">Yasser Rezvani</h1>
-                    <p class="fs-4 mt-1 mt-sm-1 mt-md-3">I have recently gotten into web development. It started as a hobby as I have always loved working with computers. Recently, I decided to turn this hobby into a career. It is not going to be easy to break into this field as it is quite saturated.</p>
+<div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="https://github.com/yrezvani?tab=repositories"><img class="avatar mx-3 navbar-brand" src="./images/coder.svg" alt="coder">Yasser Rezvani</a>
+        <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="container pb-2 pb-md-4">
+    <section class="hero">
+        <div class="p-5 bg-light rounded-3 hero-container">
+            <div class="container py-2 ">
+                <div class="d-lg-flex flex-wrap">
+                    <div class="col-lg-6 col-sm-12">
+                        <h1 class="display-6 fw-bold ">Yasser Rezvani</h1>
+                        <p class="fs-4 mt-1 mt-sm-1 mt-md-3">Frontend Web Developer bringing a background in language teaching and management to web development. In my previous career, leadership and teamwork were important parts of several roles I held. I have always been interested in coding, and was recently able to complete a web development bootcamp and receive the certificate. I am passionate about developing apps and believe it is my true calling!</p>
+                    </div>
+                    <img src="./images/myphoto.jpg" alt="yasser's photo" class="my-photo col-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                 </div>
-                <img src="./images/myphoto.jpg" alt="yasser's photo" class="my-photo col-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+            </div>
+        </div>
+    </section>
+</div>
+<section class="work">
+    <div class="container my-4 pb-2 pb-md-4">
+        <div class="row g-3">
+            <h1 class="display-6" id="work">Work</h1>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="./images/calc.jpg" alt="calculator" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Calculator</h5>
+                      <p class="card-text">This is a calculator app built using HTML, CSS and Javascript. It is capable of carrying out all basic arithmetic operations.</p>
+                      <a href="https://yrezvani.github.io/calculator/" class="btn btn-primary">Go to live page</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="./images/library.jpg" alt="library" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Library</h5>
+                      <p class="card-text">This is a library app which stores your books and displays their information on cards.</p>
+                      <a href="https://yrezvani.github.io/library/" class="btn btn-primary">Go to live page</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="./images/etch-a-sketch.jpg" alt="etch-a-sketch" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Etch a Sketch</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="https://yrezvani.github.io/sketchpad-toy/" class="btn btn-primary">Go to live page</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="./images/sign-up.jpg" alt="sign-up form" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Sign-up Form</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="https://yrezvani.github.io/sign-up-form/" class="btn btn-primary">Go to live page</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="./images/Rock.jpg" alt="rock paper scissors" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Rock Paper Scissors</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="https://yrezvani.github.io/rock-paper-scissors/" class="btn btn-primary">Go to live page</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="./images/portfolio-screenshot.jpg" alt="porfolio" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Portfolio Showcase</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="https://yrezvani.github.io/portfolio-showcase/" class="btn btn-primary">Go to live page</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
-  
+<section class="skills">
+    <div class="container pb-2 pb-md-4 mb-4">
+        <h1 class="display-6" id="skills">Skills</h1>
+        <ul class="list-group">
+            <li class="list-group-item">HTML</li>
+            <li class="list-group-item">CSS</li>
+            <li class="list-group-item">JavaScript</li>
+            <li class="list-group-item">Bootsrap</li>
+            <li class="list-group-item">Node.js</li>
+            <li class="list-group-item">React</li>
+          </ul>
+    </div>
+</section>
+<section class="about">
+    <div class="container pb-2 pb-md-4">
+        <div class="about">
+            <h1 id="about">About Me</h1>
+            <p>I have recently gotten into web development. It started as a hobby as I have always loved working with computers. Recently, I decided to turn this hobby into a career. It is not going to be easy to break into this field as it is quite saturated. However, with the kind of motivation and dedication that I see in myself, I think it is very much doable. When I start coding, I  lose track of time and basically forget about the world! I am showcasing some of the web pages and apps I have designed and deployed so far above. How do you find them for a beginner?</p>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-muted">© 2023 Yasser Rezvani</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" id="contact">
+            <li class="ms-4"><a class="text-muted" href="https://github.com/yrezvani?tab=repositories"><img src="./images/github.svg" alt="github" width="24" height="24"/></a></li>
+            <li class="ms-4"><a class="text-muted" href="https://twitter.com/"><img src="./images/twitter.svg" alt="twitter" width="24" height="24"/></a></li>
+            <li class="ms-4"><a class="text-muted" href="https://www.linkedin.com/in/yasser-rezvani-773086b3/"><img src="./images/linkedin.png" alt="linkedin" width="32" height="24"/></a></li>
+            
+            <li class="ms-4"><a class="text-muted" href="mailto:yaserrezvany@gmail.com"><img src="./images/email.png" alt="phone" width="24" height="24"></a></li>
+    </footer>
+</div>
+
 <body>
     
 </body>
