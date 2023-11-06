@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+/* General */
+p {
+    text-align: justify;
+}
+
+h1 {
+    font-weight: 700 !important;
+}
+
 /* Navbar */
 
 .avatar {
@@ -22,11 +31,8 @@
 .navbar-collapse a:hover {
     color: white;
 }
+
 /* Hero */
-.hero-container {
-    display: flex;
-    align-items: center;
-}
 .my-photo {
     border-radius: 50%;
     margin: auto;
@@ -35,27 +41,6 @@
 
 .hero {
     gap: 2rem;
-    
-
-}
-
-p {
-    text-align: justify;
-}
-
-/* Work section */
-h1 {
-    font-weight: 700 !important;
-}
-
-/* Skills section */
-
-/* About/Contact section */
-.contact-links {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
 }
 
 /* Footer */
