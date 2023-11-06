@@ -60,5 +60,9 @@ h1 {
 
 /* Footer */
 footer li:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
+}
+
+footer {
+    gap: 15px;
 }
